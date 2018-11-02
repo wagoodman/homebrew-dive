@@ -1,9 +1,9 @@
 class Dive < Formula
   desc ""
   homepage ""
-  url "https://github.com/wagoodman/dive/releases/download/v0.0.8/dive_0.0.8_darwin_amd64.tar.gz"
-  version "0.0.8"
-  sha256 "6b1c9a90cc4a3c43c95daa1157b11cfa90e5cfa6d182c413de5515b3c17f4601"
+  url "https://github.com/wagoodman/dive/releases/download/v0.1.0/dive_0.1.0_darwin_amd64.tar.gz"
+  version "0.1.0"
+  sha256 "88f700786683e07723f88885e78a9a8c0dbb01e75584e2c8214beea5d8cdc649"
 
   def install
     bin.install "dive"
