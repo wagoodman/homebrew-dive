@@ -1,9 +1,9 @@
 class Dive < Formula
   desc "A tool for exploring each layer in a docker image"
   homepage "https://github.com/wagoodman/dive/"
-  url "https://github.com/wagoodman/dive/releases/download/v0.7.0/dive_0.7.0_darwin_amd64.tar.gz"
-  version "0.7.0"
-  sha256 "7aec9f3668326705c77024e675f5c108921603fab58bf017a298a3bea4c962c3"
+  url "https://github.com/wagoodman/dive/releases/download/v0.7.1/dive_0.7.1_darwin_amd64.tar.gz"
+  version "0.7.1"
+  sha256 "0b67093f90dc330e2d0f1d40f1890b52da30484223f39b2a4b859063c8044616"
 
   def install
     bin.install "dive"
