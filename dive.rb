@@ -3,7 +3,6 @@ class Dive < Formula
   desc "A tool for exploring each layer in a docker image"
   homepage "https://github.com/wagoodman/dive/"
   version "0.9.2"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/wagoodman/dive/releases/download/v0.9.2/dive_0.9.2_darwin_amd64.tar.gz"
