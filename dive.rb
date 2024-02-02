@@ -5,20 +5,20 @@
 class Dive < Formula
   desc "A tool for exploring layers in a docker image"
   homepage "https://github.com/wagoodman/dive/"
-  version "0.11.0"
+  version "0.12.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/wagoodman/dive/releases/download/v0.11.0/dive_0.11.0_darwin_arm64.tar.gz"
-      sha256 "e7f72b9b72613fba7bf4cc9e311ff15b7def5f4e8690697c68a9d98c550dc2be"
+      url "https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_darwin_arm64.tar.gz"
+      sha256 "8ead7ce468f230ffce45b679dd1421945d6e4276654b0d90d389e357af2f4151"
 
       def install
         bin.install "dive"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/wagoodman/dive/releases/download/v0.11.0/dive_0.11.0_darwin_amd64.tar.gz"
-      sha256 "a55761d26756bfbf5884a4e6ea4c1fd01f8e24c717645a4933da09cd30b25355"
+      url "https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_darwin_amd64.tar.gz"
+      sha256 "2f7d0a7f970e09618b87f286c6ccae6a7423331372c6ced15760a5c9d6f27704"
 
       def install
         bin.install "dive"
@@ -27,17 +27,17 @@ class Dive < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/wagoodman/dive/releases/download/v0.11.0/dive_0.11.0_linux_amd64.tar.gz"
-      sha256 "80835d3320292c4ab761d03c1fd33745ddb9b6064c035b65f77825f18f407d28"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_linux_arm64.tar.gz"
+      sha256 "a2a1470302cdfa367a48f80b67bbf11c0cd8039af9211e39515bd2bbbda58fea"
 
       def install
         bin.install "dive"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wagoodman/dive/releases/download/v0.11.0/dive_0.11.0_linux_arm64.tar.gz"
-      sha256 "656aa45f618c30f02a30fa256e429ba1afafd9e39e3757e52a30764494c71b7a"
+    if Hardware::CPU.intel?
+      url "https://github.com/wagoodman/dive/releases/download/v0.12.0/dive_0.12.0_linux_amd64.tar.gz"
+      sha256 "20a7966523a0905f950c4fbf26471734420d6788cfffcd4a8c4bc972fded3e96"
 
       def install
         bin.install "dive"
